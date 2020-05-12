@@ -1,0 +1,19 @@
+@import "~bulma/css/bulma.css";
+
+.navbar-brand img {
+  margin: 0 10px;
+}
+
+form {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-brand,
+  .add-pet {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pets",
+  "info": {
+    "name": "pet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "private": false,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "uf": {
+      "type": "string",
+      "required": true,
+      "minLength": 2,
+      "maxLength": 2
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "zip": {
+      "required": false,
+      "max": 99999999,
+      "min": 11111111,
+      "type": "integer"
+    },
+    "phone": {
+      "type": "integer"
+    }
+  }
+}
